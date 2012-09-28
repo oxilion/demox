@@ -107,6 +107,7 @@ TEMPLATE_DIRS = (
 
 INSTALLED_APPS = (
     'customer',
+    'demox',
 
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -116,6 +117,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
 
+    'djangorestframework',
     'south',
 )
 

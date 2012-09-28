@@ -7,8 +7,11 @@ urlpatterns = patterns('',
     # url(r'^$', 'demox.views.home', name='home'),
     # url(r'^demox/', include('demox.foo.urls')),
 
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    url(r'^customer/', include('customer.urls', namespace='customer',
+        app_name='customer')),
+
+    url(r'^api-auth/', include('djangorestframework.urls',
+        namespace='djangorestframework')),
 
     url(r'^admin/', include(admin.site.urls)),
 )
