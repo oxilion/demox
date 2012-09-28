@@ -22,3 +22,13 @@ class CustomerList(ListOrCreateModelView):
 
 class CustomerInstance(InstanceModelView):
     resource = resources.Customer
+
+
+class PhoneNumberList(ListOrCreateModelView):
+    resource = resources.PhoneNumber
+    form = forms.PhoneNumber
+
+
+class PhoneNumberInstance(InstanceModelView):
+    resource = resources.PhoneNumber
+    form = forms.PhoneNumber
